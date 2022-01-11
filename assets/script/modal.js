@@ -22,10 +22,34 @@ function calculateUser(operatorType) {
 			currentResult = userNumberFirst + userNumberSecond;
 			mathOperator = "+";
 			break;
+		case "MIN":
+			currentResult = userNumberFirst - userNumberSecond;
+			mathOperator = "-";
+			break;
+		case "MUL":
+			currentResult = userNumberFirst * userNumberSecond;
+			mathOperator = "*";
+			break;
+		case "DIV":
+			currentResult = userNumberFirst / userNumberSecond;
+			mathOperator = "/";
+			break;
 	}
 	outPutUserResult(userNumberFirst, mathOperator, userNumberSecond, prevResult);
 }
 function add() {
 	calculateUser("ADD");
 }
+function min() {
+	calculateUser("MIN");
+}
+function mul() {
+	calculateUser("MUL");
+}
+function div() {
+	calculateUser("DIV");
+}
 btnAdd.addEventListener("click", add);
+btnMinus.addEventListener("click", min);
+btnMultiple.addEventListener("click", mul);
+btnDivide.addEventListener("click", div);
