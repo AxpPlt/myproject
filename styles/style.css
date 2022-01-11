@@ -80,5 +80,14 @@ input {
 }
 footer {
 	display: flex;
-	background-color: wheat;
+	background-color: #413622;
+	color: white;
+	padding: 2rem;
+	justify-content: center;
+}
+footer > p > a > i {
+	color: white;
+}
+footer > p > a > i:active {
+	color: rgb(163, 163, 163);
 }

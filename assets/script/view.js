@@ -17,3 +17,4 @@ function outputResult(currentResult, processUser, prevResultUser) {
 	process.textContent = processUser;
 	prevResultUserView.textContent = prevResultUser;
 }
+outputResult(0, 0, 0);
